@@ -95,6 +95,7 @@ button{
     font-weight: 700;
     line-height: 1.87; /* 187.5% */
     letter-spacing: 0.96px;
+    cursor: pointer;
 }
 
 /* specification */
@@ -128,4 +129,10 @@ button{
     font-size: 14px;
     line-height: 1.74; /* 171.429% */
     letter-spacing: 0.42px;
-    background-color: #949393;   /* времено установил фон для визуализации */
+    background-color: #949393;  
+    /* времено установил фон для визуализации */
+ }
+ .footer-contacts .link:hover,
+ .footer-contacts .link:focus {
+    color: var(--accent-color);
+ }
