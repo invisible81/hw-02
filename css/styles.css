@@ -1,5 +1,5 @@
-/* цвет основного текста #212121 */
-/* вторичный цвет текста #757575 */
+/* цвет основного текста #757575 */
+/* вторичный цвет текста   #212121 */
 /* цвет контактов в футере rgba(255, 255, 255, 0.60) */
 /* белый цвет #FFFFFF */
 /* черный цвет лого в хедере  #000000 */
@@ -101,6 +101,11 @@ button.button {
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
+.specification .descr {
+    font-size: 14px;
+    line-height: 1.71; /* 171.429% */
+    letter-spacing: 0.42px;
+}
 /* section */
 
 .section .section-title {
@@ -119,9 +124,9 @@ button.button {
     letter-spacing: 0.48px;
 }
 .section .descr {
-    font-size: 14px;
-    line-height: 1.71; /* 171.429% */
-    letter-spacing: 0.42px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.48px;
 }
 
 /* footer */
@@ -168,6 +173,7 @@ button.button {
     line-height: 1.87; /* 187.5% */
     letter-spacing: 0.48px;
  }
+ 
  .portfolio-nav .portfolio-link {
     text-decoration: none;
  }
