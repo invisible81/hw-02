@@ -19,56 +19,60 @@ body {
   color: var(--primary-text-color);
   background-color: #FFFFFF; 
 }
-
+.link {
+    text-decoration: none;
+}
 .list {
     list-style: none;
 }
 
+.title {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    line-height:  1.17;
+}
+
 
 /* лого */
-.logo {
-    color: #000000;
+.header-logo  {
+    color: var( --accent-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-    text-decoration: none;
 }
-.logo .accent {
-    color: var( --accent-color);
+.header-logo  .header-logo-second {
+    color: #000000;
+    
 }
-.logo.logo-footer {
-    color: #FFFFFF;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-    text-decoration: none;
-}
-/* site nav*/
-.site-nav .link {
+
+/* header*/
+.header-list-nav .header-link{
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    text-decoration: none;
 }
-.site-nav .link:hover, 
-.site-nav .link:focus {
+.header-list-nav .header-link:hover, 
+.header-list-nav .header-link:focus {
     color: var(--accent-color);
 }
-.site-nav .current {
+.header-list-nav .current {
     color: var(--accent-color);
 }
-.header-contacts .link {
+.header-contact-list  
+.header-mail-link, 
+.header-tel-link {
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    text-decoration: none;
 }
-.header-contacts .link:hover, 
-.header-contacts .link:focus {
+.header-contact-list  .link:hover, 
+.header-contact-list  .link:focus {
     color: var(--accent-color)
 }
 /* hero */
@@ -82,7 +86,7 @@ body {
     text-transform: uppercase;
     background-color: #949393;   /* времено установил фон для визуализации потом удалю */
 }
-button.button {
+button.hero-button {
     background-color: var(--accent-color);
     color: #FFFFFF;
     text-align: center;
@@ -93,44 +97,49 @@ button.button {
     cursor: pointer;
 }
 
-/* specification */
-.specification .title {
+/* studio */
+.stodio .studio-title {
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
-.specification .descr {
+.stodio .studio-text {
     font-size: 14px;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
 }
-/* section */
+/* work */
 
-.section .section-title {
-    color: var(--secondary-text-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-}
 
-.section .section-subtitle {
+/* team */
+.team .team-subtitle {
     color: var(--secondary-text-color);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
 }
-.section .descr {
+.team .team-descr {
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.48px;
 }
 
 /* footer */
-.footer-contacts .link{
+.footer .footer-logo {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+.footer .footer-logo-second {
+    color: #FFFFFF;
+}
+
+.footer-contact-list .link {
     color: rgba(255, 255, 255, 0.60);
     font-family: Roboto;
     font-size: 14px;
@@ -139,13 +148,13 @@ button.button {
     background-color: #949393;  
     /* времено установил фон для визуализации потом удвлю */
  }
- .footer-contacts .link:hover,
- .footer-contacts .link:focus {
+ .footer-contact-list .link:hover,
+ .footer-contact-list .link:focus {
     color: var(--accent-color);
  }
 
  /* portfolio - nav */
- .portfolio-nav .link {
+ .portfolio button {
     color: #949393;   /* времено установил фон для визуализации должен быть #FFFFFF */
     text-align: center;
     font-size: 16px;
@@ -153,20 +162,21 @@ button.button {
     line-height: 1.62; /* 162.5% */
     letter-spacing: 0.4;
     background-color: #F5F4FA;
+    cursor: pointer;
  }
- .portfolio-nav .link:hover,
- .portfolio-nav .link:focus {
+ .portfolio button:hover,
+ .portfolio button:focus {
   background-color: var(--accent-color);
 
  }
- .portfolio-nav .subtitle {
+ .portfolio .portfolio-title {
     color: var(--secondary-text-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 2.00; /* 200% */
     letter-spacing: 1.08px;
  }
- .portfolio-nav .descr {
+ .portfolio .portfolio-text {
     color: var(--primary-text-color);
     font-size: 16px;
     font-weight: 400;
@@ -174,6 +184,3 @@ button.button {
     letter-spacing: 0.48px;
  }
  
- .portfolio-nav .portfolio-link {
-    text-decoration: none;
- }
